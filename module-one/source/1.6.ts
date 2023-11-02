@@ -1,3 +1,4 @@
+{
 // learn function
 // 1. normal function
 // 2. arrow function
@@ -21,3 +22,4 @@ addArrow(4, 6)
 
 const arr: number[] = [2,4, 6, 8]
 const newArray: number[] = arr.map((elm:number):number => elm*elm)
+}
