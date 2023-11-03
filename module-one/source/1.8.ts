@@ -14,7 +14,7 @@
     const {contactNo, name: {middleName}} = user;
 
     // array destructuring
-    const myFriends = ['habib', 'labib', 'hasan', 'sujoy']
-    const [a, b, c, d] = myFriends;
+    const myFriends = ['habib', 'labib', 'hasan', 'sujoy', 'sonjoy', 'mehedi', 'lokman', 'sadi']
+    const [a, b, c, d, ...rest] = myFriends;
 
 }
