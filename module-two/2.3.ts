@@ -21,9 +21,13 @@ const user: GenericArray<{name:string, age: number}> = [
     },
 ]
 
-const add = (x:number, y: number) => x+y;
+const add = (x:number, y:number) => x+y;
 add(30, 20)
 
+type GenericTuple<x, y> = [x, y]
+const manus: GenericTuple<string, string> = [ 'mr.x', 'ms.x']
+
+const UserWithId: GenericTuple<number, {name:string, email:string}> = [ 123, {name: 'tufael', email: 'tufael.gmail.com'}]
 
 
 }
