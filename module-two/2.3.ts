@@ -10,7 +10,11 @@ const mentors: GenericArray<string> = [ 'mx', 'x', 'y', 'z']
 // const BoolArray: boolean[] = [ true, false, false, true]
 const BoolArray: GenericArray<boolean> = [ true, false, false, true ]
 
-const user: GenericArray<{name:string, age: number}> = [
+type Person = {
+    name: string;
+    age: number;
+}
+const user: GenericArray<Person> = [
     {
         name: 'tufael',
         age: 23,
