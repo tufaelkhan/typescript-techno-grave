@@ -7,7 +7,7 @@ type User1 = {
 
 type UserWithRoll1 = User1 & {role: string}
 
-const user1: UserWithRoll2= {
+const user1: UserWithRoll2 = {
     name: 'tufael',
     age: 23,
     role: 'student'
