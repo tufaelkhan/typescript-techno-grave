@@ -1,15 +1,22 @@
 {
 // generic - interface
-interface Developer<T>{
+interface Developer<T, X = null>{
     name: string;
     computer: {
         brand: string;
         model: string;
         releaseYear: number;
     }
-    smartWatch: T
+    smartWatch: T;
+    bike?: X
 }
-const poorDeveloper: Developer<{brand:string, model: string, display: string}> = {
+
+type EmilabWatch = {
+    brand:string, 
+    model: string, 
+    display: string
+}
+const poorDeveloper: Developer<EmilabWatch> = {
     name: 'tufael',
     computer: {
         brand: 'asus',
@@ -20,9 +27,20 @@ const poorDeveloper: Developer<{brand:string, model: string, display: string}> =
         brand: 'Emilab',
         model: 'krerwer',
         display: 'amulet',
-    }
+    },
 }
-const richDeveloper: Developer<{brand:string, model: string, heartTrack: boolean, sleepTrack: boolean}> = {
+
+interface AppleWatch{
+    brand:string,
+     model: string, 
+     heartTrack: boolean, 
+     sleepTrack: boolean
+}
+interface YamahaBike{
+    model:string;
+    engine: string;
+}
+const richDeveloper: Developer<AppleWatch, YamahaBike> = {
     name: 'rich dev',
     computer: {
         brand: 'hp',
@@ -34,6 +52,10 @@ const richDeveloper: Developer<{brand:string, model: string, heartTrack: boolean
         model: '45f4',
         heartTrack: true,
         sleepTrack: true,
+    },
+    bike: {
+        model: 'Yamaha',
+        engine: '110cc',
     }
 }
 
