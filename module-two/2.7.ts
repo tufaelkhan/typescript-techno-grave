@@ -22,7 +22,8 @@ const car = {
     model: 'toyota',
     year: 23,
 }
-const result1 = getPropertyValue(car, 'model')
+const result1 = getPropertyValue(user, 'address')
+const result2 = getPropertyValue(car, 'model')
 
 
 // obj['age']
