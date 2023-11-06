@@ -20,7 +20,7 @@ class Student extends Person{
         super(name, age, address)
      }
 }
-const Student1 = new Student('tufael', 23, 'topurchandi')
+const Student1 = new Student('tufael', 23, 'torpurchandi')
 
 class Teacher extends Person{
     designation:string;
