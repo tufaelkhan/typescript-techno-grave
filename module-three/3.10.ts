@@ -21,6 +21,7 @@
         }
     }
     
+    // Children class
     class StudentAccount extends BankAccount{
         test(){
             this._balance
