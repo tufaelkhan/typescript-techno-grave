@@ -16,6 +16,10 @@
       id: 13,
       name: "sujoy das",
     },
+    {
+      id: 15,
+      name: "ariful islam",
+    },
   ];
 
   // T is array of object
@@ -26,4 +30,6 @@
     return array.map((obj) => obj[key]);
   };
   console.log("array value", getPropertyFromArray(users, "name"));
+
+
 }
